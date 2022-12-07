@@ -33,13 +33,13 @@ public class BookController {
         return repo.findAll();
     }
 
-
+/*
     @GetMapping("/findBook")
     repo.findBookbyid(@PathVariable(value = "id")  int id)
     {
        return repo.findById(id).ifPresentOrElse(b ->{return b;},()-> {throw new IllegalStateException("Book does not exist");});
     }
-
+*/
 
     @DeleteMapping("/delete/{id}")
     public String deleteBook(@PathVariable int id){
